@@ -46,9 +46,6 @@ def iterGrab():
     return all_cases
 # iterGrab('http://doenetwork.org/cases/disappear.html')
 
-import requests
-import lxml.html
-
 def NamphGrab(url):
     r = requests.get(url)
     html = lxml.html.fromstring(r.text)
